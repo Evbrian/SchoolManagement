@@ -5,35 +5,44 @@
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 20px;
 }
 
+/* Container for forms and content */
 .container {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
+/* Form heading */
 h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
+/* Input fields and labels styling */
 label {
     display: block;
     margin-bottom: 8px;
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="date"],
+input[type="submit"],
+select {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -41,6 +50,7 @@ input[type="password"] {
     border-radius: 4px;
 }
 
+/* Submit button styles */
 input[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -53,4 +63,254 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Specific styles for Attendance Management page */
+.attendance-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.attendance-table th,
+.attendance-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.attendance-table th {
+    background-color: #f4f4f4;
+}
+
+.attendance-status {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.attendance-status.present {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.attendance-status.absent {
+    background-color: #f44336;
+    color: white;
+}
+
+.attendance-status.late {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Additional styling for other pages if needed */
+.student-registration, .teacher-management, .class-schedule, .grade-management {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/*************************************//***********************************************/
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    background-color: #f4f7fb;
+}
+
+/* Sidebar Styling */
+
+/* Image Styling */
+
+
+.sidebar {
+    width: 260px;
+    background-color: #2c3e50;
+    color: white;
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Fixed position to keep it in place */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left side */
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+}
+
+
+.sidebar h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #3498db;
+    padding-left: 20px;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 270px; /* Account for sidebar width */
+    padding: 20px;
+    width: 100%;
+    background-color: #ecf0f1;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Section Styling */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+section p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .main-content {
+        margin-left: 240px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
 }
