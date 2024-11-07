@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>School Management</h2>
+        <ul>
+            <li><a href="#attendance">Attendance Management</a></li>
+            <li><a href="#schedule">Class Schedule</a></li>
+            <li><a href="#grades">Grade Management</a></li>
+            <li><a href="#students">Student Management</a></li>
+            <li><a href="#teachers">Teacher Management</a></li>
+            <li><a href="#fees">Fee Management</a></li>
+            <li><a href="#timetable">Timetable Management</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to the Dashboard</h1>
+
+        <!-- Attendance Management Section -->
+        <section id="attendance">
+            <h2>Attendance Management</h2>
+            <p>Mark student attendance here.</p>
+            <!--<img src= "https://images.app.goo.gl/48bdcfutxweX8KJZ7"alt="Description of the image">-->
+            <button onclick="location.href='attendance.php'">Manage Attendance</button>
+        </section>
+
+        <!-- Class Schedule Section -->
+        <section id="schedule">
+            <h2>Class Schedule</h2>
+            <p>View and manage class schedules here.</p>
+            <button onclick="location.href='schedule.php'">View Schedule</button>
+        </section>
+
+        <!-- Grade Management Section -->
+        <section id="grades">
+            <h2>Grade Management</h2>
+            <p>View and manage student grades here.</p>
+            <button onclick="location.href='grades.php'">Manage Grades</button>
+        </section>
+
+        <!-- Student Management Section -->
+        <section id="students">
+            <h2>Student Management</h2>
+            <p>Add and manage students.</p>
+            <button onclick="location.href='students.php'">Manage Students</button>
+        </section>
+
+        <!-- Teacher Management Section -->
+        <section id="teachers">
+            <h2>Teacher Management</h2>
+            <p>Manage teachers and their assignments.</p>
+            <button onclick="location.href='teachers.php'">Manage Teachers</button>
+        </section>
+
+        <!-- Fee Management Section -->
+        <section id="fees">
+            <h2>Fee Management</h2>
+            <p>Manage student fees and payments.</p>
+            <button onclick="location.href='fees.php'">Manage Fees</button>
+        </section>
+
+        <!-- Timetable Management Section -->
+        <section id="timetable">
+            <h2>Timetable Management</h2>
+            <p>Manage and update class timetables here.</p>
+            <button onclick="location.href='timetable.php'">Manage Timetable</button>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
